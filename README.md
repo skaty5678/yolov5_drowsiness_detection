@@ -1,4 +1,5 @@
-# Ultralytics Yolov5 drowsiness detection
+# Real-Time drowsiness Detection with YOLOv5 and PyTorch
+
 Identification of objects in an image considered a common assignment for the human brain, though not so trivial for a machine. Identification and localization of objects in photos is a computer vision task called ‘object detection’. One of the most popular algorithms to date for real-time object detection is YOLO (You Only Look Once).
 
 In this project, we performed an end-to-end drowsiness detection to check whether a person is awake or drowsy, using the latest YOLOv5 implementation developed by Ultralytics.
