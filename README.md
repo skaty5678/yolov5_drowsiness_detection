@@ -1,37 +1,66 @@
 # Ultralytics Yolov5 drowsiness detection
 Identification of objects in an image considered a common assignment for the human brain, though not so trivial for a machine. Identification and localization of objects in photos is a computer vision task called ‘object detection’. One of the most popular algorithms to date for real-time object detection is YOLO (You Only Look Once).
 
-In this project, will performed an end-to-end object detection, to be precise drowsiness detection, project to see whether a person is awake or drowsy, using the latest YOLOv5 implementation developed by Ultralytics.
+In this project, we performed an end-to-end drowsiness detection to check whether a person is awake or drowsy, using the latest YOLOv5 implementation developed by Ultralytics.
 
-## Steps involved in the process
-### 1. Install and import dependencies
-Install pytorch(used to load the yolo model and make detections) and some other required libraries
+## Prerequisites
 
-clone the ultralytics yolov5 repository from github then install the requirements.txt file 
+- PyTorch
+- Torchvision
+- Torchaudio
+- OpenCV
+- Matplotlib
+- Numpy
+- ipywidgets
+- PyQt5
+- lxml
+
+## Installation
+
+1. Install the required dependencies by running the following command:
+
+!pip3 install torch torchvision torchaudio
 
 
-### 2. Load Model
-load the pretrained ultralytics model from torch hub and use the baseline model yolov5s
+!pip install opencv-python matplotlib numpy ipywidgets
 
 
-### 3. Make detections
-Make initial detections.
+!pip install pyqt5==5.15.2 lxml
 
-### 4. Real time detections
- Use opencv to access our webcam and check for real time detections.
 
-### 5. Collecting images and labelling them using labelimg
-After having the initial looks and feel of the yolov5 time to kickstart the drowsiness detection from scratch i.e to train a custom yolo model.
+2. Clone the YOLOv5 repository by running:
+!git clone https://github.com/ultralytics/yolov5
 
-First we collect some(20 in our case) images for two classes i.e. awake or drowsy, using the opencv.
+3. Navigate to the cloned directory:
 
-then we git clone the labelImg repository from github and install the requirements.txt
+cd yolov5
 
-Then proceed to label the captured images (awake or drowsy) using labelImg.
+4. Install the requirements for YOLOv5:
 
-### 6. Train the model
-Now that we have the labelled images and the pretained yolov5s model we will custom train our model specific to our need.
-Train the model for 500 epochs with a batch size of 16. accuracy close to 99.95 %.
+!pip install -r requirements.txt
 
-### 7. Save and load model
-At last we load our trained custom model and see the performance of our model in real time.
+
+5. Clone the labelImg repository for image labeling:
+
+!git clone https://github.com/tzutalin/labelImg.git
+
+
+## Usage
+
+1. Collect Images:
+- Connect a webcam to your computer.
+- Run the code to capture images for the specified labels ("awake" and "drowsy").
+- Images will be saved in the "data/images" directory.
+
+2. Label Images:
+- Open the labelImg tool to label the collected images as "awake" or "drowsy".
+- Save the labeled annotations as XML files.
+
+3. Train the YOLOv5 Model:
+- Run the training script with the specified parameters (image size, batch size, epochs, data configuration, weights, etc.).
+- The model will be trained on the labeled images using the YOLOv5 architecture.
+
+4. Load the Trained Model:
+- Load the trained model weights for inference.
+- Perform object detection on images or video streams.
+
