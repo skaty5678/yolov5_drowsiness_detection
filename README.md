@@ -19,30 +19,31 @@ In this project, we performed an end-to-end drowsiness detection to check whethe
 
 1. Install the required dependencies by running the following command:
 
-!pip3 install torch torchvision torchaudio
+    !pip3 install torch torchvision torchaudio
 
 
-!pip install opencv-python matplotlib numpy ipywidgets
+    !pip install opencv-python matplotlib numpy ipywidgets
 
 
-!pip install pyqt5==5.15.2 lxml
+    !pip install pyqt5==5.15.2 lxml
 
 
 2. Clone the YOLOv5 repository by running:
-!git clone https://github.com/ultralytics/yolov5
+3. 
+    !git clone https://github.com/ultralytics/yolov5
 
 3. Navigate to the cloned directory:
 
-cd yolov5
+    cd yolov5
 
 4. Install the requirements for YOLOv5:
 
-!pip install -r requirements.txt
+    !pip install -r requirements.txt
 
 
 5. Clone the labelImg repository for image labeling:
 
-!git clone https://github.com/tzutalin/labelImg.git
+    !git clone https://github.com/tzutalin/labelImg.git
 
 
 ## Usage
