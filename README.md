@@ -29,7 +29,7 @@ In this project, we performed an end-to-end drowsiness detection to check whethe
 
 
 2. Clone the YOLOv5 repository by running:
-3. 
+ 
     !git clone https://github.com/ultralytics/yolov5
 
 3. Navigate to the cloned directory:
